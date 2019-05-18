@@ -28,7 +28,7 @@ def kangaroo(x1, v1, x2, v2):
     jumps1 = 0
     jumps2 = 0
     while True:
-        if kangaroo_ahead_and_jumps_further(x1, v1, x2, v2):
+        if kangaroo_cannot_be_caught(x1, v1, x2, v2):
             break
         else:
             if x1 == x2 and jumps1 == jumps2:
@@ -42,7 +42,7 @@ def kangaroo(x1, v1, x2, v2):
     return can_collide
 
 
-def kangaroo_ahead_and_jumps_further(x1, v1, x2, v2):
+def kangaroo_cannot_be_caught(x1, v1, x2, v2):
     return (x1 > x2 and v1 >= v2) or (x2 > x1 and v2 >= v1)
 
 
