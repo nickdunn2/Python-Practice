@@ -20,6 +20,8 @@ a: an array of integers
 b: an array of integers
 
 Output: Print the number of integers that are considered to be between a and b.
+
+See here: https://www.hackerrank.com/challenges/between-two-sets/problem
 '''
 
 from functools import reduce
