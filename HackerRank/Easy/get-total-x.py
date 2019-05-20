@@ -11,9 +11,20 @@ For example, given the arrays a = [2, 6] and b = [24, 36], there are two numbers
 Explanation:
     6 % 2 = 0, 6 % 6 = 0, and 24 % 6 = 0, 36 % 6 = 0 for the first value.
     Similarly, 12 % 2 = 0, 12 % 6 = 0 and 24 % 12 = 0, 36 % 12 = 0.
+
+Complete the get_total_x function. It should return the number of integers that are between the sets.
+
+get_total_x has the following parameter(s):
+
+a: an array of integers
+b: an array of integers
+
+Output: Print the number of integers that are considered to be between a and b.
 '''
 
 from functools import reduce
+
+# HELPER FUNCTIONS FOR LCM AND GCD
 
 
 def gcd(a, b):
